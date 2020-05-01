@@ -1,0 +1,38 @@
+﻿<Window x:Class="GameMap.NewMap"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameMap"
+        mc:Ignorable="d"
+        Title="Nuevo mapa" Height="200" Width="300" ResizeMode="NoResize">
+    <Grid Margin="30,20">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Text="Columnas" FontSize="16" FontWeight="Light"
+                   HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="Filas" FontSize="16" FontWeight="Light"
+                   HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+
+        <TextBox Name="tbxColumns" Width="40" FontSize="18"
+                 HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1"
+                 HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="tbxRows" Width="40"  FontSize="18"
+                 HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"
+                 HorizontalContentAlignment="Center"/>
+
+        <Button Width="60" Height="24" Content="Generar" FontSize="12" IsDefault="True"
+                Background="White" BorderBrush="LawnGreen" BorderThickness="2"
+                HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"
+                Click="Button_Click"/>
+    </Grid>
+</Window>

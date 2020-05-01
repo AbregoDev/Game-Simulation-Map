@@ -1,0 +1,21 @@
+﻿<Window x:Class="GameMap.OpenMap"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameMap"
+        mc:Ignorable="d"
+        Title="OpenMap" Height="200" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <Button x:Name="btnOpenMap" Width="100" Height="34" Content="Abrir mapa" FontSize="16"
+                Background="White" BorderBrush="Red" BorderThickness="2"
+                    Margin="0,0,0,20"
+                Click="btnOpenMap_Click"/>
+            
+            <Button x:Name="btnNewMap" Width="110" Height="34" Content="Nuevo mapa" FontSize="16"
+                Background="White" BorderBrush="DodgerBlue" BorderThickness="2"
+                Click="btnNewMap_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
